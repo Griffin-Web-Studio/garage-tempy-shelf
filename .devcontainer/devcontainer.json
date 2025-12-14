@@ -1,40 +1,68 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-	"name": "Node.js & TypeScript",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
-	"features": {
-		"ghcr.io/shyim/devcontainers-features/bun:0": {}
-	},
-	//
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-	//
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	//
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
-	//
-	// Configure tool-specific properties.
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"streetsidesoftware.code-spell-checker-british-english",
-				"SonarSource.sonarlint-vscode",
-				"eamodio.gitlens",
-				"mikestead.dotenv",
-				"firefox-devtools.vscode-firefox-debug"
-			],
-			"settings": {
-				"files.exclude": {
-					"**/node_modules": true
-				}
-			}
-		}
-	}
-	//
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  "name": "Node.js & TypeScript",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/shyim/devcontainers-features/bun:0": {}
+  },
+  //
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+  //
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+  //
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "yarn install",
+  //
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker-british-english",
+        "SonarSource.sonarlint-vscode",
+        "eamodio.gitlens",
+        "mikestead.dotenv",
+        "firefox-devtools.vscode-firefox-debug",
+        "bradlc.vscode-tailwindcss",
+        "Prettier.prettier-vscode",
+        "prettier.prettier-vscode"
+      ],
+      "settings": {
+        "files.exclude": {
+          "**/node_modules": true
+        },
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "[ts]": {
+          "editor.defaultFormatter": "prettier.prettier-vscode",
+          "editor.indentSize": 2
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "prettier.prettier-vscode",
+          "editor.indentSize": 2
+        },
+        "[jsx]": {
+          "editor.defaultFormatter": "prettier.prettier-vscode",
+          "editor.indentSize": 2
+        },
+        "[tsx]": {
+          "editor.defaultFormatter": "prettier.prettier-vscode",
+          "editor.indentSize": 2
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "vscode.typescript-language-features",
+          "editor.indentSize": 2
+        },
+        "[css]": {
+          "editor.indentSize": 2
+        }
+      }
+    }
+  }
+  //
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
 }
