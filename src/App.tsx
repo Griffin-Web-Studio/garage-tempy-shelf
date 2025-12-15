@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Faq from "./components/Faq";
 import Header from "./components/Header";
 import Hero from "./sections/Hero";
+import IconCards from "./sections/IconCards";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +14,8 @@ function App() {
   const RESPONSIVE_WIDTH = 1024;
 
   const gsapContainer = React.useRef<HTMLDivElement>(null);
+
+  const tqbfjotld = "The quick brown fox jumps over the lazy dog.";
 
   useGSAP(
     () => {
@@ -95,62 +98,26 @@ function App() {
         </div>
       </section> */}
 
-      <section className="relative flex w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6">
-        <div className="mt-8 flex flex-col place-items-center gap-5">
-          <div className="reveal-up mt-5 flex flex-col gap-3 text-center">
-            <h2 className="text-4xl font-medium text-gray-200 max-md:text-3xl">
-              Key benefits
-            </h2>
-          </div>
-          <div className="mt-6 flex max-w-[80%] flex-wrap place-content-center gap-8 max-lg:flex-col">
-            <div className="reveal-up flex h-100 w-112.5 flex-col gap-3 text-center max-md:w-[320px]">
-              <div className="border-gradient h-50 w-full overflow-hidden max-md:h-37.5">
-                <div className="flex h-full w-full place-content-center place-items-end p-2">
-                  <i className="bi bi-rocket-takeoff-fill text-7xl text-gray-200 max-md:text-5xl"></i>
-                </div>
-              </div>
-              <div className="flex flex-col gap-4 p-2">
-                <h3 className="mt-8 text-2xl font-normal max-md:text-xl">
-                  Benefit X
-                </h3>
-                <div className="text-gray-300">
-                  The quick brown fox jumps over the lazy dog.
-                </div>
-              </div>
-            </div>
-            <div className="reveal-up flex h-100 w-112.5 flex-col gap-3 text-center max-md:w-[320px]">
-              <div className="border-gradient h-50 w-full overflow-hidden max-md:text-[150px]">
-                <div className="flex h-full w-full place-content-center place-items-end p-2">
-                  <i className="bi bi-layout-sidebar-inset text-7xl text-gray-200 max-md:text-5xl"></i>
-                </div>
-              </div>
-              <div className="flex flex-col gap-4 p-2">
-                <h3 className="mt-8 text-2xl font-normal max-md:text-xl">
-                  Benefit Y
-                </h3>
-                <div className="text-gray-300">
-                  The quick brown fox jumps over the lazy dog.
-                </div>
-              </div>
-            </div>
-            <div className="reveal-up flex h-100 w-112.5 flex-col gap-3 text-center max-md:w-[320px]">
-              <div className="border-gradient h-50 w-full overflow-hidden max-md:h-37.5">
-                <div className="flex h-full w-full place-content-center place-items-end p-2">
-                  <i className="bi bi-lightning-charge-fill text-7xl text-gray-200 max-md:text-5xl"></i>
-                </div>
-              </div>
-              <div className="flex flex-col gap-4 p-2">
-                <h3 className="mt-8 text-2xl font-normal max-md:text-xl">
-                  Benefit Z
-                </h3>
-                <div className="text-gray-300">
-                  The quick brown fox jumps over the lazy dog.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <IconCards
+        title="Key benefits"
+        items={[
+          {
+            label: "Benefit X",
+            body: tqbfjotld,
+            icon: "bi-rocket-takeoff-fill",
+          },
+          {
+            label: "Benefit Y",
+            body: tqbfjotld,
+            icon: "bi-layout-sidebar-inset",
+          },
+          {
+            label: "Benefit Z",
+            body: tqbfjotld,
+            icon: "bi-lightning-charge-fill",
+          },
+        ]}
+      />
 
       <section className="relative flex min-h-[80vh] w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6">
         <div className="mt-8 flex flex-col place-items-center gap-5">
