@@ -6,6 +6,7 @@ import Faq from "./components/Faq";
 import Header from "./components/Header";
 import Hero from "./sections/Hero";
 import IconCards from "./sections/IconCards";
+import ColouredIconCards from "./sections/ColouredIconCards";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -119,100 +120,41 @@ function App() {
         ]}
       />
 
-      <section className="relative flex min-h-[80vh] w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6">
-        <div className="mt-8 flex flex-col place-items-center gap-5">
-          <div className="reveal-up mt-5 flex flex-col gap-3 text-center">
-            <h2 className="text-4xl font-medium text-gray-200 max-md:text-2xl">
-              Features loved by everyone
-            </h2>
-          </div>
-          <div className="mt-6 flex max-w-[80%] flex-wrap place-content-center gap-8 max-lg:flex-col">
-            <div className="reveal-up flex h-50 w-112.5 gap-8 rounded-xl border border-outlineColor bg-secondary p-8 max-md:w-[320px]">
-              <div className="text-4xl max-md:text-2xl">
-                <i className="bi bi-globe"></i>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <h3 className="text-2xl max-md:text-xl">Feature A</h3>
-                <p className="text-gray-300 max-md:text-sm">
-                  The quick brown fox jumps over the lazy dog. The quick brown
-                  fox jumps over the lazy dog.
-                </p>
-              </div>
-            </div>
-
-            <div className="reveal-up flex h-50 w-112.5 gap-8 rounded-xl border border-outlineColor bg-secondary p-8 max-md:w-[320px]">
-              <div className="text-4xl max-md:text-2xl">
-                <i className="bi bi-bar-chart-fill"></i>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <h3 className="text-2xl max-md:text-xl">Feature B</h3>
-                <p className="text-gray-300 max-md:text-sm">
-                  The quick brown fox jumps over the lazy dog. The quick brown
-                  fox jumps over the lazy dog.
-                </p>
-              </div>
-            </div>
-
-            <div className="reveal-up flex h-50 w-112.5 gap-8 rounded-xl border border-outlineColor bg-secondary p-8 max-md:w-[320px]">
-              <div className="text-4xl max-md:text-2xl">
-                <i className="bi bi-cloud-fill"></i>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <h3 className="text-2xl max-md:text-xl">Feature C</h3>
-                <p className="text-gray-300 max-md:text-sm">
-                  The quick brown fox jumps over the lazy dog. The quick brown
-                  fox jumps over the lazy dog.
-                </p>
-              </div>
-            </div>
-
-            <div className="reveal-up flex h-50 w-112.5 gap-8 rounded-xl border border-outlineColor bg-secondary p-8 max-md:w-[320px]">
-              <div className="text-4xl max-md:text-2xl">
-                <i className="bi bi-fingerprint"></i>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <h3 className="text-2xl max-md:text-xl">Feature D</h3>
-                <p className="text-gray-300 max-md:text-sm">
-                  The quick brown fox jumps over the lazy dog. The quick brown
-                  fox jumps over the lazy dog.
-                </p>
-              </div>
-            </div>
-
-            <div className="reveal-up flex h-50 w-112.5 gap-8 rounded-xl border border-outlineColor bg-secondary p-8 max-md:w-[320px]">
-              <div className="text-4xl max-md:text-2xl">
-                <i className="bi bi-sliders"></i>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <h3 className="text-2xl max-md:text-xl">Feature E</h3>
-                <p className="text-gray-300 max-md:text-sm">
-                  The quick brown fox jumps over the lazy dog. The quick brown
-                  fox jumps over the lazy dog.
-                </p>
-              </div>
-            </div>
-
-            <div className="reveal-up flex h-50 w-112.5 gap-8 rounded-xl border border-outlineColor bg-secondary p-8 max-md:w-[320px]">
-              <div className="text-4xl max-md:text-2xl">
-                <i className="bi bi-gear-fill"></i>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                <h3 className="text-2xl max-md:text-xl">Feature F</h3>
-                <p className="text-sm text-gray-300">
-                  The quick brown fox jumps over the lazy dog. The quick brown
-                  fox jumps over the lazy dog.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ColouredIconCards
+        title="Features loved by everyone"
+        items={[
+          {
+            label: "Feature A",
+            body: `${tqbfjotld} ${tqbfjotld}`,
+            icon: "bi-globe",
+          },
+          {
+            label: "Feature B",
+            body: `${tqbfjotld} ${tqbfjotld}`,
+            icon: "bi-bar-chart-fill",
+          },
+          {
+            label: "Feature C",
+            body: `${tqbfjotld} ${tqbfjotld}`,
+            icon: "bi-cloud-fill",
+          },
+          {
+            label: "Feature D",
+            body: `${tqbfjotld} ${tqbfjotld}`,
+            icon: "bi-fingerprint",
+          },
+          {
+            label: "Feature E",
+            body: `${tqbfjotld} ${tqbfjotld}`,
+            icon: "bi-sliders",
+          },
+          {
+            label: "Feature F",
+            body: `${tqbfjotld} ${tqbfjotld}`,
+            icon: "bi-gear-fill",
+          },
+        ]}
+      />
 
       <section className="relative flex min-h-[80vh] w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6">
         <div className="reveal-up flex min-h-[60vh] place-content-center place-items-center gap-[10%] max-lg:flex-col max-lg:gap-10">
