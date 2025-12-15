@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Hero from "./sections/Hero";
 import IconCards from "./sections/IconCards";
 import ColouredIconCards from "./sections/ColouredIconCards";
+import ImageTextLayout from "./sections/ImageTextLayout";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -156,78 +157,40 @@ function App() {
         ]}
       />
 
-      <section className="relative flex min-h-[80vh] w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6">
-        <div className="reveal-up flex min-h-[60vh] place-content-center place-items-center gap-[10%] max-lg:flex-col max-lg:gap-10">
-          <div className="flex">
-            <div className="max-h-162.5 max-w-212.5 overflow-hidden rounded-lg shadow-lg shadow-[rgba(170,49,233,0.44021358543417366)]">
-              <img
-                src="/assets/images/home/dash.png"
-                alt="coding"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="mt-6 flex max-w-112.5 flex-col gap-4">
-            <h3 className="text-4xl font-medium max-md:text-2xl">
-              Simple to use plugins
-            </h3>
+      <ImageTextLayout
+        title="Simple to use plugins"
+        image="/assets/images/home/dash.png"
+        items={[
+          {
+            icon: "bi-check-all",
+            label: "Plug the ins",
+            body: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+          },
+          {
+            icon: "bi-check-all",
+            label: "Ins the plug",
+            body: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+          },
+        ]}
+      />
 
-            <div className="mt-4 flex flex-col gap-3">
-              <h4 className="text-xl font-medium">
-                <i className="bi bi-check-all text-2xl!"></i> Plug the ins
-              </h4>
-              <span className="text-lg text-gray-300 max-md:text-base">
-                {tqbfjotld} {tqbfjotld} {tqbfjotld}
-              </span>
-            </div>
-            <div className="mt-4 flex flex-col gap-3">
-              <h4 className="text-xl font-medium">
-                <i className="bi bi-check-all text-2xl!"></i> Ins the plug
-              </h4>
-              <span className="text-lg text-gray-300 max-md:text-base">
-                {tqbfjotld} {tqbfjotld} {tqbfjotld}
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative flex min-h-[80vh] w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6">
-        <div className="reveal-up flex min-h-[60vh] place-content-center place-items-center gap-[10%] max-lg:flex-col max-lg:gap-10">
-          <div className="mt-6 flex max-w-112.5 flex-col gap-4">
-            <h3 className="text-4xl font-medium max-md:text-2xl">
-              Powerful Insights
-            </h3>
-
-            <div className="mt-4 flex flex-col gap-3">
-              <h4 className="text-xl font-medium">
-                <i className="bi bi-check-all text-2xl!"></i> Easy to use
-              </h4>
-              <span className="text-lg text-gray-300 max-md:text-base">
-                {tqbfjotld} {tqbfjotld} {tqbfjotld}
-              </span>
-            </div>
-            <div className="mt-4 flex flex-col gap-3">
-              <h4 className="text-xl font-medium">
-                <i className="bi bi-check-all text-2xl!"></i> All in one panel
-              </h4>
-              <span className="text-lg text-gray-300 max-md:text-base">
-                {tqbfjotld} {tqbfjotld} {tqbfjotld}
-              </span>
-            </div>
-          </div>
-
-          <div className="flex">
-            <div className="max-h-162.5 max-w-212.5 overflow-hidden rounded-lg shadow-lg shadow-[rgba(170,49,233,0.44021358543417366)]">
-              <img
-                src="/assets/images/home/dash.png"
-                alt="coding"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ImageTextLayout
+        rev
+        title="Powerful Insights"
+        image="/assets/images/home/dash.png"
+        items={[
+          {
+            icon: "bi-check-all",
+            label: "Easy to use",
+            body: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+          },
+          {
+            icon: "bi-check-all",
+            label: "All in one panel",
+            body: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+          },
+        ]}
+      />
 
       <section className="mt-5 flex min-h-[80vh] w-full flex-col place-content-center place-items-center p-[2%]">
         <h3 className="text-4xl font-medium text-gray-200 max-md:text-2xl">
