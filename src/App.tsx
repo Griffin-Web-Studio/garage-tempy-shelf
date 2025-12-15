@@ -235,9 +235,7 @@ function App() {
                 <i className="bi bi-check-all text-2xl!"></i> Plug the ins
               </h4>
               <span className="text-lg text-gray-300 max-md:text-base">
-                The quick brown fox jumps over the lazy dog. The quick brown fox
-                jumps over the lazy dog. The quick brown fox jumps over the lazy
-                dog.
+                {tqbfjotld} {tqbfjotld} {tqbfjotld}
               </span>
             </div>
             <div className="mt-4 flex flex-col gap-3">
@@ -245,9 +243,7 @@ function App() {
                 <i className="bi bi-check-all text-2xl!"></i> Ins the plug
               </h4>
               <span className="text-lg text-gray-300 max-md:text-base">
-                The quick brown fox jumps over the lazy dog. The quick brown fox
-                jumps over the lazy dog. The quick brown fox jumps over the lazy
-                dog.
+                {tqbfjotld} {tqbfjotld} {tqbfjotld}
               </span>
             </div>
           </div>
@@ -266,9 +262,7 @@ function App() {
                 <i className="bi bi-check-all text-2xl!"></i> Easy to use
               </h4>
               <span className="text-lg text-gray-300 max-md:text-base">
-                The quick brown fox jumps over the lazy dog. The quick brown fox
-                jumps over the lazy dog. The quick brown fox jumps over the lazy
-                dog.
+                {tqbfjotld} {tqbfjotld} {tqbfjotld}
               </span>
             </div>
             <div className="mt-4 flex flex-col gap-3">
@@ -276,9 +270,7 @@ function App() {
                 <i className="bi bi-check-all text-2xl!"></i> All in one panel
               </h4>
               <span className="text-lg text-gray-300 max-md:text-base">
-                The quick brown fox jumps over the lazy dog. The quick brown fox
-                jumps over the lazy dog. The quick brown fox jumps over the lazy
-                dog.
+                {tqbfjotld} {tqbfjotld} {tqbfjotld}
               </span>
             </div>
           </div>
@@ -302,9 +294,7 @@ function App() {
         {/* Testimonials */}
         <div className="mt-8 gap-10 space-y-8 max-md:columns-1 lg:columns-2 xl:columns-3">
           <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
-            <p className="mt-4 text-gray-300">
-              The quick brown fox jumps over the lazy dog.
-            </p>
+            <p className="mt-4 text-gray-300">{tqbfjotld}</p>
 
             <div className="flex place-items-center gap-3">
               <div className="h-12.5 w-12.5 overflow-hidden rounded-full">
@@ -322,9 +312,7 @@ function App() {
           </div>
           <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
             <p className="mt-4 text-gray-300">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog. The quick brown fox jumps over the lazy
-              dog. The quick brown fox jumps over the lazy dog.
+              {tqbfjotld} {tqbfjotld} {tqbfjotld} {tqbfjotld}
             </p>
 
             <div className="flex place-items-center gap-3">
@@ -343,8 +331,7 @@ function App() {
           </div>
           <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
             <p className="mt-4 text-gray-300">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog.
+              {tqbfjotld} {tqbfjotld}
             </p>
 
             <div className="flex place-items-center gap-3">
@@ -363,9 +350,7 @@ function App() {
           </div>
           <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
             <p className="mt-4 text-gray-300">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog. The quick brown fox jumps over the lazy
-              dog.
+              {tqbfjotld} {tqbfjotld} {tqbfjotld}
             </p>
 
             <div className="flex place-items-center gap-3">
@@ -384,9 +369,7 @@ function App() {
           </div>
           <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
             <p className="mt-4 text-gray-300">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog. The quick brown fox jumps over the lazy
-              dog.
+              {tqbfjotld} {tqbfjotld} {tqbfjotld}
             </p>
 
             <div className="flex place-items-center gap-3">
@@ -405,9 +388,7 @@ function App() {
           </div>
           <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
             <p className="mt-4 text-gray-300">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog. The quick brown fox jumps over the lazy
-              dog.
+              {tqbfjotld} {tqbfjotld} {tqbfjotld}
             </p>
 
             <div className="flex place-items-center gap-3">
@@ -445,15 +426,14 @@ function App() {
               <span className="text-2xl text-gray-400">/mo</span>
             </h3>
             <p className="mt-3 text-center text-gray-300">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog.
+              {tqbfjotld} {tqbfjotld}
             </p>
             <hr />
             <ul className="mt-4 flex flex-col gap-2 text-center text-lg text-gray-200">
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
             </ul>
             <a
               href="http://"
@@ -468,15 +448,14 @@ function App() {
               <span className="text-2xl text-gray-400">/mo</span>
             </h3>
             <p className="mt-3 text-center text-gray-300">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog.
+              {tqbfjotld} {tqbfjotld}
             </p>
             <hr />
             <ul className="mt-4 flex flex-col gap-2 text-center text-lg text-gray-200">
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
             </ul>
             <a
               href="http://"
@@ -490,15 +469,13 @@ function App() {
               <span className="text-5xl font-semibold">$000</span>
               <span className="text-2xl text-gray-400">/mo</span>
             </h3>
-            <p className="mt-3 text-center text-gray-300">
-              The quick brown fox jumps over the lazy dog.
-            </p>
+            <p className="mt-3 text-center text-gray-300">{tqbfjotld}</p>
             <hr />
             <ul className="mt-4 flex flex-col gap-2 text-center text-lg text-gray-200">
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
-              <li>The quick brown fox jumps over the lazy dog.</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
+              <li>{tqbfjotld}</li>
             </ul>
             <a
               href="http://"
@@ -531,8 +508,7 @@ function App() {
               Article 1
             </h3>
             <p className="text-gray-400">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog.
+              {tqbfjotld} {tqbfjotld}
             </p>
             <span>
               <span>Learn more</span>
@@ -554,8 +530,7 @@ function App() {
               Article 2
             </h3>
             <p className="text-gray-400">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog.
+              {tqbfjotld} {tqbfjotld}
             </p>
             <span>
               <span>Learn more</span>
@@ -577,8 +552,7 @@ function App() {
               Article 3
             </h3>
             <p className="text-gray-400">
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog.
+              {tqbfjotld} {tqbfjotld}
             </p>
             <span>
               <span>Learn more</span>
@@ -593,25 +567,13 @@ function App() {
           Faq
         </h3>
         <div className="mt-5 flex min-h-75 w-full max-w-212.5 flex-col gap-4">
-          <Faq
-            label="The quick brown fox jumps over the lazy dog."
-            text="The quick brown fox jumps over the lazy dog."
-          />
+          <Faq label={tqbfjotld} text={tqbfjotld} />
 
-          <Faq
-            label="The quick brown fox jumps over the lazy dog."
-            text="The quick brown fox jumps over the lazy dog."
-          />
+          <Faq label={tqbfjotld} text={tqbfjotld} />
 
-          <Faq
-            label="The quick brown fox jumps over the lazy dog."
-            text="The quick brown fox jumps over the lazy dog."
-          />
+          <Faq label={tqbfjotld} text={tqbfjotld} />
 
-          <Faq
-            label="The quick brown fox jumps over the lazy dog."
-            text="The quick brown fox jumps over the lazy dog."
-          />
+          <Faq label={tqbfjotld} text={tqbfjotld} />
         </div>
 
         <div className="mt-20 flex flex-col place-items-center gap-4">
@@ -631,9 +593,7 @@ function App() {
             <h2 className="text-3xl text-gray-300 max-md:text-xl">
               Join our newsletter
             </h2>
-            <div className="text-gray-300">
-              The quick brown fox jumps over the lazy dog.
-            </div>
+            <div className="text-gray-300">{tqbfjotld}</div>
           </div>
 
           <div className="flex h-15 place-items-center gap-2 overflow-hidden p-2">
