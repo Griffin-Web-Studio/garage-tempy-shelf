@@ -4,13 +4,12 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface HeroProps {
-  repo_url: string;
   RESPONSIVE_WIDTH: number;
 }
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Hero = ({ RESPONSIVE_WIDTH, repo_url }: HeroProps) => {
+const Hero = ({ RESPONSIVE_WIDTH }: HeroProps) => {
   const sectionRef = React.useRef<HTMLElement>(null);
   const dashboardRef = React.useRef<HTMLDivElement>(null);
 
@@ -50,8 +49,15 @@ const Hero = ({ RESPONSIVE_WIDTH, repo_url }: HeroProps) => {
     >
       <div className="flex h-full min-h-screen w-full flex-col place-content-center gap-6 p-[5%] max-xl:place-items-center max-lg:p-4">
         <div className="flex flex-col place-content-center items-center">
-          <div className="reveal-up gradient-text text-center text-6xl font-semibold uppercase leading-20 max-lg:text-4xl max-md:leading-snug">
-            <span className=""> InvoiceShelf </span>
+          <div className="reveal-up flex items-center gap-5 white-text text-center text-6xl font-semibold leading-20 max-lg:text-4xl max-md:leading-snug">
+            <span className="italic capitalize font-thin font-fancy text-8xl">
+              the
+            </span>{" "}
+            <img
+              src="/assets/logo/logo-white.png"
+              alt="InvoiceShelf"
+              className="logo object w-80"
+            />
             {/* <br />
               <span className=""> Made simple </span> */}
           </div>
@@ -64,18 +70,20 @@ const Hero = ({ RESPONSIVE_WIDTH, repo_url }: HeroProps) => {
 
           <div className="reveal-up mt-10 flex place-items-center gap-4">
             <a
-              className="btn bg-[#7e22ce85] shadow-lg shadow-primary transition-transform duration-300 hover:scale-x-[1.03]"
-              href={repo_url}
+              className="btn shadow-lg shadow-primary transition-transform duration-300 hover:scale-x-[1.03]"
+              href="https://github.com/InvoiceShelf/InvoiceShelf/releases/download/2.1.1/InvoiceShelf.zip"
             >
-              Get started
+              Download Latest
+              {/* Get started */}
             </a>
-            {/* <a
-              className="btn flex gap-2 !bg-black !text-white transition-colors duration-300 hover:!bg-white hover:!text-black"
-              href=""
+            <a
+              className="btn flex gap-2 bg-black! text-white! transition-colors duration-300 hover:bg-white! hover:text-black!"
+              href="https://github.com/InvoiceShelf/InvoiceShelf/releases/tag/2.1.1"
             >
-              <i className="bi bi-play-circle-fill"></i>
-              <span>Learn more</span>
-            </a> */}
+              <i className="bi bi-archive-fill"></i>
+              <span>Github Release 2.1.1</span>
+              {/* <span>Learn more</span> */}
+            </a>
           </div>
         </div>
 
