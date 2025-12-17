@@ -8,6 +8,7 @@ import Hero from "./sections/Hero";
 import IconCards from "./sections/IconCards";
 import ColouredIconCards from "./sections/ColouredIconCards";
 import ImageTextLayout from "./sections/ImageTextLayout";
+import Testimonies from "./sections/Testimonies";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,29 +104,29 @@ function App() {
         </div>
       </section> */}
 
+      <IconCards
+        title="Key Benefits"
+        items={[
+          {
+            label: "Dockerised",
+            body: "Spin up at will using our official docker image.",
+            icon: "bi-box-fill",
+          },
+          {
+            label: "Data Control",
+            body: "You own your data! no one else, you!",
+            icon: "bi-database-check",
+          },
+          {
+            label: "Simple UI",
+            body: "Simplicity at the core, we don't want to complicate things.",
+            icon: "bi-layout-sidebar-inset",
+          },
+        ]}
+      />
+
       {isDevelopment && (
         <>
-          <IconCards
-            title="Key benefits"
-            items={[
-              {
-                label: "Benefit X",
-                body: tqbfjotld,
-                icon: "bi-rocket-takeoff-fill",
-              },
-              {
-                label: "Benefit Y",
-                body: tqbfjotld,
-                icon: "bi-layout-sidebar-inset",
-              },
-              {
-                label: "Benefit Z",
-                body: tqbfjotld,
-                icon: "bi-lightning-charge-fill",
-              },
-            ]}
-          />
-
           <ColouredIconCards
             title="Features loved by everyone"
             items={[
@@ -197,126 +198,47 @@ function App() {
             ]}
           />
 
-          <section className="mt-5 flex min-h-[80vh] w-full flex-col place-content-center place-items-center p-[2%]">
-            <h3 className="text-4xl font-medium text-gray-200 max-md:text-2xl">
-              You're in good hands
-            </h3>
-            {/* Testimonials */}
-            <div className="mt-8 gap-10 space-y-8 max-md:columns-1 lg:columns-2 xl:columns-3">
-              <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
-                <p className="mt-4 text-gray-300">{tqbfjotld}</p>
-
-                <div className="flex place-items-center gap-3">
-                  <div className="h-12.5 w-12.5 overflow-hidden rounded-full">
-                    <img
-                      src="/assets/images/home/dash.png"
-                      className="h-full w-full object-cover"
-                      alt="women"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <div className="font-semibold">The who A?</div>
-                    <div className="text-gray-400">Does what where???</div>
-                  </div>
-                </div>
-              </div>
-              <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
-                <p className="mt-4 text-gray-300">
-                  {tqbfjotld} {tqbfjotld} {tqbfjotld} {tqbfjotld}
-                </p>
-
-                <div className="flex place-items-center gap-3">
-                  <div className="h-12.5 w-12.5 overflow-hidden rounded-full">
-                    <img
-                      src="/assets/images/home/dash.png"
-                      className="h-full w-full object-cover"
-                      alt="man"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <div className="font-semibold">The who B?</div>
-                    <div className="text-gray-400">Does what where???</div>
-                  </div>
-                </div>
-              </div>
-              <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
-                <p className="mt-4 text-gray-300">
-                  {tqbfjotld} {tqbfjotld}
-                </p>
-
-                <div className="flex place-items-center gap-3">
-                  <div className="h-12.5 w-12.5 overflow-hidden rounded-full">
-                    <img
-                      src="/assets/images/home/dash.png"
-                      className="h-full w-full object-cover"
-                      alt="man"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <div className="font-semibold">The who C?</div>
-                    <div className="text-gray-400">Does what where???</div>
-                  </div>
-                </div>
-              </div>
-              <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
-                <p className="mt-4 text-gray-300">
-                  {tqbfjotld} {tqbfjotld} {tqbfjotld}
-                </p>
-
-                <div className="flex place-items-center gap-3">
-                  <div className="h-12.5 w-12.5 overflow-hidden rounded-full">
-                    <img
-                      src="/assets/images/home/dash.png"
-                      className="h-full w-full object-cover"
-                      alt="man"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <div className="font-semibold">The who D?</div>
-                    <div className="text-gray-400">Does what where???</div>
-                  </div>
-                </div>
-              </div>
-              <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
-                <p className="mt-4 text-gray-300">
-                  {tqbfjotld} {tqbfjotld} {tqbfjotld}
-                </p>
-
-                <div className="flex place-items-center gap-3">
-                  <div className="h-12.5 w-12.5 overflow-hidden rounded-full">
-                    <img
-                      src="/assets/images/home/dash.png"
-                      className="h-full w-full object-cover"
-                      alt="man"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <div className="font-semibold">The who E?</div>
-                    <div className="text-gray-400">Does what where???</div>
-                  </div>
-                </div>
-              </div>
-              <div className="reveal-up flex h-fit w-87.5 break-inside-avoid flex-col gap-4 rounded-lg border border-outlineColor bg-secondary p-4 max-lg:w-[320px]">
-                <p className="mt-4 text-gray-300">
-                  {tqbfjotld} {tqbfjotld} {tqbfjotld}
-                </p>
-
-                <div className="flex place-items-center gap-3">
-                  <div className="h-12.5 w-12.5 overflow-hidden rounded-full">
-                    <img
-                      src="/assets/images/home/dash.png"
-                      className="h-full w-full object-cover"
-                      alt="man"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <div className="font-semibold">The who F?</div>
-                    <div className="text-gray-400">Does what where???</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Testimonies
+            title="You're in good hands"
+            testimonials={[
+              {
+                quote: `${tqbfjotld} ${tqbfjotld}`,
+                author: "Author 1",
+                position: "Probably CEO",
+                profilePic: "/assets/images/home/dash.png",
+              },
+              {
+                quote: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+                author: "Author 1",
+                position: "Probably CEO",
+                profilePic: "/assets/images/home/dash.png",
+              },
+              {
+                quote: `${tqbfjotld} ${tqbfjotld}`,
+                author: "Author 1",
+                position: "Probably CEO",
+                profilePic: "/assets/images/home/dash.png",
+              },
+              {
+                quote: `${tqbfjotld}`,
+                author: "Author 1",
+                position: "Probably CEO",
+                profilePic: "/assets/images/home/dash.png",
+              },
+              {
+                quote: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+                author: "Author 1",
+                position: "Probably CEO",
+                profilePic: "/assets/images/home/dash.png",
+              },
+              {
+                quote: `${tqbfjotld}`,
+                author: "Author 1",
+                position: "Probably CEO",
+                profilePic: "/assets/images/home/dash.png",
+              },
+            ]}
+          />
 
           <section
             className="mt-5 flex w-full flex-col place-items-center p-[2%]"
