@@ -267,6 +267,7 @@ function App() {
                 ],
                 ctaLabel: "Start now",
                 ctaUrl: repo_url,
+                eyeSnag: true,
               },
               {
                 price: "£000",
