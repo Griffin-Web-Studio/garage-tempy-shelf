@@ -10,6 +10,7 @@ import ColouredIconCards from "./sections/ColouredIconCards";
 import ImageTextLayout from "./sections/ImageTextLayout";
 import Testimonies from "./sections/Testimonies";
 import PriceCards from "./sections/PriceCards";
+import BlogFeed from "./sections/BlogFeed";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -287,80 +288,29 @@ function App() {
             ]}
           />
 
-          <section className="mt-5 flex min-h-[80vh] w-full flex-col place-content-center place-items-center p-[2%] max-lg:p-3">
-            <h3 className="reveal-up text-center text-4xl font-medium max-md:text-2xl">
-              Read our articles ✨
-            </h3>
-            {/* articles */}
-            <div className="reveal-up mt-10 flex flex-wrap place-content-center gap-10 max-lg:flex-col">
-              <a
-                href={repo_url}
-                className="flex h-100 w-100 flex-col gap-4 overflow-clip rounded-lg p-4 max-lg:w-75"
-              >
-                <div className="h-62.5 w-full overflow-hidden rounded-md">
-                  <img
-                    src="/assets/images/home/dash.png"
-                    alt="article"
-                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.04]"
-                  />
-                </div>
-                <h3 className="mt-2 text-2xl font-semibold max-md:text-xl">
-                  Article 1
-                </h3>
-                <p className="text-gray-400">
-                  {tqbfjotld} {tqbfjotld}
-                </p>
-                <span>
-                  <span>Learn more</span>
-                  <i className="bi bi-arrow-right"></i>
-                </span>
-              </a>
-              <a
-                href={repo_url}
-                className="flex h-100 w-100 flex-col gap-4 overflow-clip rounded-lg p-4 max-lg:w-75"
-              >
-                <div className="h-62.5 w-full overflow-hidden rounded-md">
-                  <img
-                    src="/assets/images/home/dash.png"
-                    alt="article"
-                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.04]"
-                  />
-                </div>
-                <h3 className="mt-2 text-2xl font-semibold max-md:text-xl">
-                  Article 2
-                </h3>
-                <p className="text-gray-400">
-                  {tqbfjotld} {tqbfjotld}
-                </p>
-                <span>
-                  <span>Learn more</span>
-                  <i className="bi bi-arrow-right"></i>
-                </span>
-              </a>
-              <a
-                href={repo_url}
-                className="flex h-100 w-100 flex-col gap-4 overflow-clip rounded-lg p-4 max-lg:w-75"
-              >
-                <div className="h-62.5 w-full overflow-hidden rounded-md">
-                  <img
-                    src="/assets/images/home/dash.png"
-                    alt="article"
-                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.04]"
-                  />
-                </div>
-                <h3 className="mt-2 text-2xl font-semibold max-md:text-xl">
-                  Article 3
-                </h3>
-                <p className="text-gray-400">
-                  {tqbfjotld} {tqbfjotld}
-                </p>
-                <span>
-                  <span>Learn more</span>
-                  <i className="bi bi-arrow-right"></i>
-                </span>
-              </a>
-            </div>
-          </section>
+          <BlogFeed
+            title="Read our articles ✨"
+            posts={[
+              {
+                title: "Article 1",
+                excerpt: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+                img: "/assets/images/home/dash.png",
+                url: repo_url,
+              },
+              {
+                title: "Article 1",
+                excerpt: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+                img: "/assets/images/home/dash.png",
+                url: repo_url,
+              },
+              {
+                title: "Article 1",
+                excerpt: `${tqbfjotld} ${tqbfjotld} ${tqbfjotld}`,
+                img: "/assets/images/home/dash.png",
+                url: repo_url,
+              },
+            ]}
+          />
 
           <section className="flex w-full flex-col place-content-center place-items-center gap-[10%] p-[5%] px-[10%]">
             <h3 className="text-4xl font-medium text-gray-300 max-md:text-2xl">
