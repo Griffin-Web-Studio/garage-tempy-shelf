@@ -2,7 +2,6 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Faq from "./components/Faq";
 import Header from "./components/Header";
 import Hero from "./sections/Hero";
 import IconCards from "./sections/IconCards";
@@ -11,6 +10,7 @@ import ImageTextLayout from "./sections/ImageTextLayout";
 import Testimonies from "./sections/Testimonies";
 import PriceCards from "./sections/PriceCards";
 import BlogFeed from "./sections/BlogFeed";
+import Faqs from "./sections/Faqs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -312,32 +312,26 @@ function App() {
             ]}
           />
 
-          <section className="flex w-full flex-col place-content-center place-items-center gap-[10%] p-[5%] px-[10%]">
-            <h3 className="text-4xl font-medium text-gray-300 max-md:text-2xl">
-              Faq
-            </h3>
-            <div className="mt-5 flex min-h-75 w-full max-w-212.5 flex-col gap-4">
-              <Faq label={tqbfjotld} text={tqbfjotld} />
-
-              <Faq label={tqbfjotld} text={tqbfjotld} />
-
-              <Faq label={tqbfjotld} text={tqbfjotld} />
-
-              <Faq label={tqbfjotld} text={tqbfjotld} />
-            </div>
-
-            <div className="mt-20 flex flex-col place-items-center gap-4">
-              <div className="text-3xl max-md:text-2xl">
-                Still have questions?
-              </div>
-              <a
-                href="http://"
-                className="btn rounded-full! border! border-solid! border-gray-300! bg-transparent! transition-colors duration-300"
-              >
-                Contact
-              </a>
-            </div>
-          </section>
+          <Faqs
+            ctaTitle="Still have questions?"
+            title="Faq"
+            ctaLabel="Contact"
+            ctaUrl={repo_url}
+            faqs={[
+              {
+                label: tqbfjotld,
+                text: tqbfjotld,
+              },
+              {
+                label: tqbfjotld,
+                text: tqbfjotld,
+              },
+              {
+                label: tqbfjotld,
+                text: tqbfjotld,
+              },
+            ]}
+          />
 
           <section className="flex w-full flex-col place-content-center place-items-center gap-[10%] p-[5%] px-[10%] max-md:px-2">
             <div className="flex w-full max-w-[80%] place-content-center place-items-center justify-between gap-3 rounded-lg border border-outlineColor bg-secondary p-6 max-md:max-w-full max-md:flex-col">

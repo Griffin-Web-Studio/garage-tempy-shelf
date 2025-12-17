@@ -1,6 +1,6 @@
 import React from "react";
 
-interface FaqProps {
+export interface FaqProps {
   label: string;
   text: string;
 }
