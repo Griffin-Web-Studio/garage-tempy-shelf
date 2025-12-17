@@ -9,6 +9,7 @@ import IconCards from "./sections/IconCards";
 import ColouredIconCards from "./sections/ColouredIconCards";
 import ImageTextLayout from "./sections/ImageTextLayout";
 import Testimonies from "./sections/Testimonies";
+import PriceCards from "./sections/PriceCards";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -240,84 +241,50 @@ function App() {
             ]}
           />
 
-          <section
-            className="mt-5 flex w-full flex-col place-items-center p-[2%]"
-            id="pricing"
-          >
-            <h3 className="text-3xl font-medium text-gray-300 max-md:text-2xl">
-              Simple pricing
-            </h3>
-            <p className="pt-2">
-              We don't really know why this section exist ether 🤷
-            </p>
-            {/* pricing */}
-            <div className="mt-10 flex flex-wrap place-content-center gap-8 max-lg:flex-col">
-              <div className="reveal-up flex w-95 flex-col place-items-center gap-2 rounded-lg border border-outlineColor bg-secondary p-8 shadow-xl max-lg:w-[320px]">
-                <h3 className="">
-                  <span className="text-5xl font-semibold">$0</span>
-                  <span className="text-2xl text-gray-400">/mo</span>
-                </h3>
-                <p className="mt-3 text-center text-gray-300">
-                  {tqbfjotld} {tqbfjotld}
-                </p>
-                <hr />
-                <ul className="mt-4 flex flex-col gap-2 text-center text-lg text-gray-200">
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                </ul>
-                <a
-                  href="http://"
-                  className="btn mt-8 w-full! transition-transform duration-300 hover:scale-x-[1.02]"
-                >
-                  Get now
-                </a>
-              </div>
-              <div className="reveal-up flex w-95 flex-col place-items-center gap-2 rounded-lg border-2 border-primary bg-secondary p-8 shadow-xl max-lg:w-[320px]">
-                <h3 className="">
-                  <span className="text-5xl font-semibold">$00</span>
-                  <span className="text-2xl text-gray-400">/mo</span>
-                </h3>
-                <p className="mt-3 text-center text-gray-300">
-                  {tqbfjotld} {tqbfjotld}
-                </p>
-                <hr />
-                <ul className="mt-4 flex flex-col gap-2 text-center text-lg text-gray-200">
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                </ul>
-                <a
-                  href="http://"
-                  className="btn mt-8 w-full! transition-transform duration-300 hover:scale-x-[1.02]"
-                >
-                  Get now
-                </a>
-              </div>
-              <div className="reveal-up flex w-95 flex-col place-items-center gap-2 rounded-lg border border-outlineColor bg-secondary p-8 shadow-xl max-lg:w-[320px]">
-                <h3 className="">
-                  <span className="text-5xl font-semibold">$000</span>
-                  <span className="text-2xl text-gray-400">/mo</span>
-                </h3>
-                <p className="mt-3 text-center text-gray-300">{tqbfjotld}</p>
-                <hr />
-                <ul className="mt-4 flex flex-col gap-2 text-center text-lg text-gray-200">
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                  <li>{tqbfjotld}</li>
-                </ul>
-                <a
-                  href="http://"
-                  className="btn mt-8 w-full! transition-transform duration-300 hover:scale-x-[1.02]"
-                >
-                  Get now
-                </a>
-              </div>
-            </div>
-          </section>
+          <PriceCards
+            title="Simple pricing"
+            subTitle="We don't really know why this section exist ether 🤷"
+            cards={[
+              {
+                price: "£0",
+                cycleDuration: "annum",
+                description: "*minus the infrastructure costs",
+                items: ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"],
+                ctaLabel: "Start now",
+                ctaUrl: repo_url,
+              },
+              {
+                price: "£00",
+                cycleDuration: "annum",
+                description: "*minus the infrastructure costs",
+                items: [
+                  "Everything in previous plan plus:",
+                  "Item 6",
+                  "Item 7",
+                  "Item 8",
+                  "Item 9",
+                  "Item 10",
+                ],
+                ctaLabel: "Start now",
+                ctaUrl: repo_url,
+              },
+              {
+                price: "£000",
+                cycleDuration: "annum",
+                description: "*minus the infrastructure costs",
+                items: [
+                  "Everything in previous plan plus:",
+                  "Item 11",
+                  "Item 12",
+                  "Item 13",
+                  "Item 14",
+                  "Item 15",
+                ],
+                ctaLabel: "Start now",
+                ctaUrl: repo_url,
+              },
+            ]}
+          />
 
           <section className="mt-5 flex min-h-[80vh] w-full flex-col place-content-center place-items-center p-[2%] max-lg:p-3">
             <h3 className="reveal-up text-center text-4xl font-medium max-md:text-2xl">
