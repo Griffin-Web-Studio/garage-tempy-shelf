@@ -19,8 +19,8 @@ const PriceCards = ({ title, subTitle, cards }: PriceCardsProps) => {
       <p className="pt-2">{subTitle}</p>
 
       <div className="mt-10 flex flex-wrap place-content-center gap-8 max-lg:flex-col">
-        {cards.map(({ ...props }: PriceCardProps) => (
-          <PriceCard {...props} />
+        {cards.map(({ ...props }: PriceCardProps, index) => (
+          <PriceCard key={index + props.price} {...props} />
         ))}
       </div>
     </section>
