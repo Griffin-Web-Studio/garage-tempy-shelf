@@ -11,6 +11,7 @@ import Testimonies from "./sections/Testimonies";
 import PriceCards from "./sections/PriceCards";
 import BlogFeed from "./sections/BlogFeed";
 import Faqs from "./sections/Faqs";
+import Newsletter from "./sections/Newsletter";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -333,30 +334,12 @@ function App() {
             ]}
           />
 
-          <section className="flex w-full flex-col place-content-center place-items-center gap-[10%] p-[5%] px-[10%] max-md:px-2">
-            <div className="flex w-full max-w-[80%] place-content-center place-items-center justify-between gap-3 rounded-lg border border-outlineColor bg-secondary p-6 max-md:max-w-full max-md:flex-col">
-              <div className="flex flex-col gap-1">
-                <h2 className="text-3xl text-gray-300 max-md:text-xl">
-                  Join our newsletter
-                </h2>
-                <div className="text-gray-300">{tqbfjotld}</div>
-              </div>
-
-              <div className="flex h-15 place-items-center gap-2 overflow-hidden p-2">
-                <input
-                  type="email"
-                  className="input h-full w-full border-gray-600! p-2 outline-none"
-                  placeholder="email"
-                />
-                <a
-                  className="btn !rounded-full! border! border-solid! border-gray-300! bg-transparent! transition-colors duration-300"
-                  href={repo_url}
-                >
-                  Signup
-                </a>
-              </div>
-            </div>
-          </section>
+          <Newsletter
+            title="Join our newsletter"
+            subHeading={tqbfjotld}
+            formAction="/"
+            ctaLabel="Signup"
+          />
 
           <footer className="mt-auto flex w-full place-content-around gap-3 p-[5%] px-[10%] text-white max-md:flex-col">
             <div className="flex h-full w-62.5 flex-col gap-6 max-md:w-full">
