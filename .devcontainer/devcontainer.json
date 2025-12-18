@@ -27,7 +27,6 @@
         "mikestead.dotenv",
         "firefox-devtools.vscode-firefox-debug",
         "bradlc.vscode-tailwindcss",
-        "Prettier.prettier-vscode",
         "prettier.prettier-vscode"
       ],
       "settings": {
