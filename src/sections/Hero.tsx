@@ -49,8 +49,8 @@ const Hero = ({ RESPONSIVE_WIDTH }: HeroProps) => {
     >
       <div className="flex h-full min-h-screen w-full flex-col place-content-center gap-6 p-[5%] max-xl:place-items-center max-lg:p-4">
         <div className="flex flex-col place-content-center items-center">
-          <div className="reveal-up flex items-center gap-5 white-text text-center text-6xl font-semibold leading-20 max-lg:text-4xl max-md:leading-snug">
-            <span className="italic capitalize font-thin font-fancy text-8xl">
+          <div className="reveal-up flex items-baseline gap-5 white-text text-center text-6xl font-semibold leading-20 max-lg:text-4xl max-md:leading-snug">
+            <span className="italic capitalize font-thin font-fancy text-9xl">
               the
             </span>{" "}
             <img
