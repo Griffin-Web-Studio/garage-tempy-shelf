@@ -344,7 +344,7 @@ function App() {
           <footer className="mt-auto flex w-full place-content-around gap-3 p-[5%] px-[10%] text-white max-md:flex-col">
             <div className="flex h-full w-62.5 flex-col gap-6 max-md:w-full">
               <img
-                src="/assets/logo/logo.png"
+                src="/assets/logo/logo-white.png"
                 alt="logo"
                 className="max-w-50"
               />
